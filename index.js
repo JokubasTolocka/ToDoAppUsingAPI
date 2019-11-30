@@ -1,7 +1,11 @@
 var express = require('express'),
     app = express();
     port = process.env.PORT || 3000,
-    todoRoutes = require('./routes/todos');
+    todoRoutes = require('./routes/todos'),
+    bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(res,res){
     res.send("Hello from root route"); 
