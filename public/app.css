@@ -1,3 +1,35 @@
+body{
+    background: #FAACA8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DDD6F3, #FAACA8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DDD6F3, #FAACA8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.container{
+    width: 500px;
+    background: white;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    align-items: center;
+    background-color: rgb(236, 237, 240);
+    -webkit-box-shadow: inset 13px 13px 20px 0px rgba(255,255,255,1);
+    -moz-box-shadow: inset 13px 13px 20px 0px rgba(255,255,255,1);
+    box-shadow: inset 13px 13px 20px 0px rgba(255,255,255,1);
+    -webkit-box-shadow: inset -13px -13px 20px 0px rgba(220,221,224,1);
+    -moz-box-shadow: inset -13px -13px 20px 0px rgba(220,221,224,1);
+    box-shadow: inset -13px -13px 20px 0px rgba(220,221,224,1);
+}
 h1{
-    color: purple;
+    margin-top: 50px;
+    font-size: 3em;
+}
+#todoInput{
+    color: #d1cece;
+    border: none;
+    font-size: 30px;
+    height: 50px;
+    width: 350px;
+    background-color: rgb(236, 237, 240);
 }
