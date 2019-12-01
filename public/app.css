@@ -39,6 +39,7 @@ h1{
     background-color: rgb(236, 237, 240);
 }
 .list{
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
 }
