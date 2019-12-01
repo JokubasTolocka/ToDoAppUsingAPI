@@ -39,9 +39,22 @@ h1{
     background-color: rgb(236, 237, 240);
 }
 .list{
+    padding-left: 60px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+}
+ul{
+    list-style: none;
+}
+li::before {
+    content: "\25CE"; 
+    color: rgb(176, 162, 209);
+    width: 1em;
+    margin-left: -1em;
+    margin-right: 1em;
+    font-weight: bold;
+    display: inline-block;
 }
 .todo{
     /* padding-top: 15px;
@@ -52,7 +65,7 @@ h1{
 	font-size: 25px;
     padding: 0 20px;
     color: #1d1d1d;
-    margin: 0 20px;
+    margin-right: 40px;
 }
 .done{
     text-decoration: line-through;
