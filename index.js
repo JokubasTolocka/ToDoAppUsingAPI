@@ -4,11 +4,15 @@ var express = require('express'),
     todoRoutes = require('./routes/todos'),
     bodyParser = require('body-parser');
 
+//setting up body-parser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+//setting up static directory
+app.use(express.static(__dirname + '/views'));
+app.use(express.static(__dirname + '/public'));
 
 app.get("/", function(res,res){
-    res.send("Hello from root route"); 
+    res.sendFile("index.html");
 })
 //to use the initial route beginning
 app.use('/api/todos', todoRoutes);
