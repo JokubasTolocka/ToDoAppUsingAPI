@@ -27,7 +27,7 @@ h1{
     font-size: 3em;
 }
 #todoInput{
-    color: #d1cece;
+    color: #1d1d1d;
     border: none;
     font-size: 30px;
     height: 50px;
@@ -45,5 +45,10 @@ h1{
 	height: 60px;
 	line-height: 60px;
 	font-size: 20px;
-	padding: 0 20px;
+    padding: 0 20px;
+    color: #1d1d1d;
+}
+.done{
+    text-decoration: line-through;
+    color: #707070;
 }
