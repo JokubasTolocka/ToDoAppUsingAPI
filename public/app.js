@@ -7,6 +7,9 @@ function addTodos(todos){
     //add todos to the page
     todos.forEach(function(todo){
         var newTodo = $('<li class="todo">' + todo.name + '</li>');
+        if(todo.completed){
+            newTodo.addClass("done");
+        }
         $('.list').append(newTodo);
     });
 
