@@ -30,7 +30,7 @@ function createTodo(){
 }
 
 function addTodo(todo){
-    var newTodo = $('<li class="todo">' + todo.name + '</li>');
+    var newTodo = $('<li class="todo grow">' + todo.name + '</li>');
     if(todo.completed){
         newTodo.addClass("done");
     }
