@@ -39,10 +39,29 @@ h1{
     background-color: rgb(236, 237, 240);
 }
 .list{
+    overflow-y: scroll;
+    height: 45vh;
     padding-left: 60px;
+    margin-right: 10px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+background: rgb(180, 168, 221); 
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: rgb(150, 141, 173); 
 }
 ul{
     list-style: none;
