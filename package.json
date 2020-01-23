@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon my_file.js",
+    "start": "nodemon index.js",
     "heroku-postbuild": "npm install --only=dev && npm install"
   },
   "author": "JokubasTolocka",
