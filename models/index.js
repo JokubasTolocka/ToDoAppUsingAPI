@@ -1,7 +1,10 @@
 var mongoose = require("mongoose");
 //allows to see bugs
 mongoose.set("debug", true);
-mongoose.connect('mongodb://localhost/todoapinew');
+mongoose.connect('mongodb://localhost/todoapinew', {
+    useUnifiedTopology: true,
+    useNewUrlParser: true
+});
 //allows to use promise
 mongoose.Promise = Promise;
 
